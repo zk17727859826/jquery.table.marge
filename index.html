@@ -55,8 +55,17 @@
             </tr>
             <tr>
                 <td>2</td>
+                <td>3</td>
                 <td>1</td>
                 <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>1</td>
+                <td>2</td>
                 <td>1</td>
                 <td>1</td>
                 <td>1</td>
@@ -71,16 +80,7 @@
                 <td>1</td>
                 <td>1</td>
             </tr>
-            <tr>
-                <td>3</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-            </tr>
-            <tr>
+            <!--<tr>
                 <td>3</td>
                 <td>1</td>
                 <td>1</td>
@@ -439,22 +439,26 @@
                 <td>1</td>
                 <td>1</td>
                 <td>1</td>
-            </tr>
+            </tr>-->
         </tbody>
     </table>
     <script src="jquery-1.11.0.js"></script>
     <script src="jquery.table.marge.js"></script>
-    <script >
+    <script>
+        //$('#textTable').margetable({
+        //    colindex:[{
+        //        index:0
+        //    },{
+        //        index:1,
+        //        dependent:[0]
+        //    },{
+        //        index:2,
+        //        dependent:[0,1]
+        //    }]
+        //});
         $('#textTable').margetable({
-            colindex:[{
-                index:0
-            },{
-                index:1,
-                dependent:[0]
-            },{
-                index:2,
-                dependent:[0,1]
-            }]
+            type: 2,
+            colindex: [0, 1, 2,4]
         });
     </script>
 </body>
